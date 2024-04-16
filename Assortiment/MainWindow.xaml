@@ -1,0 +1,29 @@
+﻿<Window x:Class="Assortiment.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assortiment"
+        mc:Ignorable="d"
+        Title="ВХОД" Height="550" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="manager.jpg"/>
+    </Window.Background>
+    <Grid Margin="0,0,0,-6">
+        <Grid x:Name="GridCaptcha" Margin="486,75,85,162" Background="#FFFBF7F4">
+            <Label x:Name="Label_Captcha" Content="" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,45,0,0"  VerticalAlignment="Top" Width="192" Height="73" Background="White" FontFamily="Rockwell Condensed" FontSize="36" Foreground="#FF009FEF"/>
+            <Label Content="Введите код с картинки" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="18" Height="40" Width="208" FontFamily="Bahnschrift" Foreground="#FF009FEF"/>
+            <TextBox x:Name="TextBox_Prverka" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="35" FontSize="18" Margin="0,128,0,0" FontFamily="Bahnschrift"/>
+            <Button x:Name="Button_Check" Content="Проверить" HorizontalAlignment="Center" Margin="0,177,0,0" Width="192" Background="#FF009FEF" FontFamily="Bahnschrift" FontSize="18" Foreground="#FFFBF7F4" Height="33" VerticalAlignment="Top" Click="Button_Check_Click_1" />
+        </Grid>
+        <Grid x:Name="GridAuto" Margin="444,54,44,121" Background="#FFFBF7F4">
+            <Label Content="Вход :" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Bahnschrift" Foreground="#FF009FEF"/>
+            <TextBox x:Name="TextBox_Login" HorizontalAlignment="Center" Margin="0,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" Height="33" FontSize="18" FontFamily="Bahnschrift" Text=""/>
+            <Label Content="Логин" HorizontalAlignment="Left" Margin="26,52,0,0" VerticalAlignment="Top" Width="73" FontSize="18" FontFamily="Bahnschrift" Foreground="#FF009FEF"/>
+            <Label Content="Пароль" HorizontalAlignment="Left" Margin="26,131,0,0" VerticalAlignment="Top" Width="73" FontSize="18" FontFamily="Bahnschrift" Foreground="#FF009FEF"/>
+            <Button x:Name="Button_Vhod" Content="Войти" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" Width="260" Height="39" Background="#FF009FEF" FontSize="18" FontFamily="Bahnschrift" Foreground="#FFFBF7F4" Click="Button_Click"/>
+            <Button x:Name="Button_Reg" Content="Регистрация" HorizontalAlignment="Center" Margin="0,290,0,0" VerticalAlignment="Top" Width="260" Height="39" Background="#FF009FEF" FontSize="18" FontFamily="Bahnschrift" Foreground="#FFFBF7F4" Click="Button_Reg_Click"/>
+            <PasswordBox x:Name="PasswordBox_Password" HorizontalAlignment="Center" Margin="0,167,0,0" VerticalAlignment="Top" Width="260" Height="33" FontFamily="Bahnschrift" FontSize="18"/>
+        </Grid>
+    </Grid>
+</Window>
